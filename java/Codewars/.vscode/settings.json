@@ -1,0 +1,24 @@
+{
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+    "debug.onTaskErrors": "debugAnyway",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "python.languageServer": "Pylance",
+    "php.validate.executablePath": "",
+    "window.zoomLevel": 1,
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "C_Cpp.updateChannel": "Insiders",
+    "cmake.configureOnOpen": true,
+    "java.home": "C:\\Program Files\\Java\\jdk-12.0.1",
+    "java.help.firstView": "gettingStarted",
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    }
+}
