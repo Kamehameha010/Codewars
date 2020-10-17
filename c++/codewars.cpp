@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <string>
 #include <exception>
@@ -11,6 +10,8 @@
 #include <cstring>
 #include <set>
 #include <valarray>
+#include <map>
+
 //#include <compare>
 bool solution(std::string const &, std::string const &);
 int square_sum(const std::vector<int> &);
@@ -61,20 +62,9 @@ int32_t main()
     {
         std::cout << "n " << i << "\n";
     }
-
-    uint32_t num = 2154959208;
-    std::string chainBits{};
-    std::cout << "\n";
-    while (num > 0)
-    {
-        
-        chainBits +=std::to_string( num% 2);
-        num /= 2;
-    }
-    std::reverse(std::begin(chainBits), std::end(chainBits));
-   
-    std::cout <<chainBits <<"\n"  ;
-    std::cout << "\n";
+    std::cout<<uint32_to_ip(229839745)<<"\n";
+    
+    std::cout<<"\n";
 
     return 0;
 }
@@ -220,7 +210,27 @@ std::vector<T> uniqueInOrder(const std::vector<T> &iterable)
 
 std::string uint32_to_ip(uint32_t ip)
 {
-    
-    return "";
-}
+    const int valOct[]{128, 64, 32, 16, 8, 4, 2, 1};
+    std::string bin{};
+    std::string ipv4{};
+    while (ip > 0)
+    {
+        bin += std::to_string(ip % 2);
+        ip /= 2;
+    }
+    bin = bin.length() < 32 ? bin.append((32 - bin.length()), '0') : bin;
+    std::reverse(std::begin(bin), std::end(bin));
 
+    for (int32_t i = 0; i < bin.length(); i += 8)
+    {
+        const int sumOct = [&, result = 0](std::string str) mutable {
+            for (int32_t j = 0; j < str.length(); ++j)
+            {
+                result += (str[j] - 48) > 0 ? valOct[j] : 0;
+            }
+            return result;
+        }(bin.substr(i, 8));
+        ipv4 += i != bin.length() - 8 ? std::to_string(sumOct) + "." : std::to_string(sumOct);
+    }
+    return ipv4;
+}
