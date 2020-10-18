@@ -1,8 +1,5 @@
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
-
-import java.util.stream.Stream;
+import java.util.stream.*;
 
 public class Test {
 
@@ -12,13 +9,15 @@ public class Test {
 
 	public static void main(String[] args) {
 
-		System.out.println("Hola");
 		System.out.println(highAndLow("1 2 3 4 5")); // return "5 1"
 		System.out.println(toCamelCase("the-Stealth-Warrior"));
 
 		System.out.println("Digital root " + digital_root(456));
 
 		System.out.println(validate("1741"));
+		
+		solution("abcde");
+
 	}
 
 	static String highAndLow(String numbers) {
@@ -65,5 +64,17 @@ public class Test {
 		int sum = Arrays.asList(n1).stream().mapToInt(Integer::parseInt).sum();
 		System.out.println(sum);
 		return sum % 10 == 0 || sum % 10 == 10;
+	}
+
+	public static String[] solution(String s) {
+		//or split((?<=\\G.{2}))
+		s =s.length() % 2 == 1 ? s+"_" : "";
+		String t[] = new String[s.length() / 2];
+		int index = 0;
+		for (int i = 0; i < s.length(); i += 2) {
+			t[index] = s.substring(i, i + 2);
+			++index;
+		}
+		return t;
 	}
 }
