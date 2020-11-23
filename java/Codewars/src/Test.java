@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.stream.*;
 
 public class Test {
@@ -15,9 +16,13 @@ public class Test {
 		System.out.println("Digital root " + digital_root(456));
 
 		System.out.println(validate("1741"));
-		
-		solution("abcde");
 
+		solution("abcde");
+		System.out.println(makeReadable(0));
+		System.out.println(makeReadable(60));
+		System.out.println(makeReadable(86399));
+		System.out.println(makeReadable(359999));
+		System.out.println(makeReadable(45580));
 	}
 
 	static String highAndLow(String numbers) {
@@ -67,8 +72,8 @@ public class Test {
 	}
 
 	public static String[] solution(String s) {
-		//or split((?<=\\G.{2}))
-		s =s.length() % 2 == 1 ? s+"_" : "";
+		// or split((?<=\\G.{2}))
+		s = s.length() % 2 == 1 ? s + "_" : "";
 		String t[] = new String[s.length() / 2];
 		int index = 0;
 		for (int i = 0; i < s.length(); i += 2) {
@@ -76,5 +81,20 @@ public class Test {
 			++index;
 		}
 		return t;
+	}
+
+	public static String makeReadable(int seconds) {
+		// Do something
+		
+		if (seconds < 60) 
+			return String.format("00:00:%02d", seconds);
+			
+		int hours = Math.round(seconds / 3600);
+		int minutes = (seconds %3600)/60;
+		seconds = seconds % 60;
+		
+		return String.format("%02d:%02d:%02d", hours, minutes, seconds);
+
+		
 	}
 }
