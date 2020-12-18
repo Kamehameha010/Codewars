@@ -58,6 +58,23 @@ namespace codewars
         {
             return String.Join("", str.Select(x => Char.IsUpper(x) ? $" {x}" : $"{x}"));
         }
+        public static int[] Parse(string data)
+        {
+            int value = 0;
+            List<int> result = new List<int>();
+
+            foreach (var chr in data)
+            {
+                switch (chr)
+                {
+                    case 'i': ++value; break;
+                    case 'd': --value; break;
+                    case 's': value *= value; break;
+                    case 'o': result.Add(value); break;
+                }
+            }
+            return result.ToArray();
+        }
         static void Main(string[] args)
         {
             Console.WriteLine(Solution(10));
@@ -70,6 +87,13 @@ namespace codewars
             }
             Console.WriteLine(validBraces(abc));
             Console.WriteLine(BreakCamelCase("palabraClaveCazonsalud"));
+
+            var resultE = Parse("iiisdosodddddiso");
+
+            foreach(var item in resultE){
+                Console.WriteLine(item);
+            }
+
         }
     }
 }

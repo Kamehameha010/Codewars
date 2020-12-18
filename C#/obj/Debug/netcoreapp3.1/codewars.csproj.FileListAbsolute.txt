@@ -11,3 +11,16 @@ C:\Users\joel010\Desktop\Proga\C#\C#8\codewars\obj\Debug\netcoreapp3.1\codewars.
 C:\Users\joel010\Desktop\Proga\C#\C#8\codewars\obj\Debug\netcoreapp3.1\codewars.dll
 C:\Users\joel010\Desktop\Proga\C#\C#8\codewars\obj\Debug\netcoreapp3.1\codewars.pdb
 C:\Users\joel010\Desktop\Proga\C#\C#8\codewars\obj\Debug\netcoreapp3.1\codewars.genruntimeconfig.cache
+C:\Users\joel010\Desktop\Proga\Exercises\Codewars\C#\bin\Debug\netcoreapp3.1\codewars.exe
+C:\Users\joel010\Desktop\Proga\Exercises\Codewars\C#\bin\Debug\netcoreapp3.1\codewars.deps.json
+C:\Users\joel010\Desktop\Proga\Exercises\Codewars\C#\bin\Debug\netcoreapp3.1\codewars.runtimeconfig.json
+C:\Users\joel010\Desktop\Proga\Exercises\Codewars\C#\bin\Debug\netcoreapp3.1\codewars.runtimeconfig.dev.json
+C:\Users\joel010\Desktop\Proga\Exercises\Codewars\C#\bin\Debug\netcoreapp3.1\codewars.dll
+C:\Users\joel010\Desktop\Proga\Exercises\Codewars\C#\bin\Debug\netcoreapp3.1\codewars.pdb
+C:\Users\joel010\Desktop\Proga\Exercises\Codewars\C#\obj\Debug\netcoreapp3.1\codewars.csprojAssemblyReference.cache
+C:\Users\joel010\Desktop\Proga\Exercises\Codewars\C#\obj\Debug\netcoreapp3.1\codewars.AssemblyInfoInputs.cache
+C:\Users\joel010\Desktop\Proga\Exercises\Codewars\C#\obj\Debug\netcoreapp3.1\codewars.AssemblyInfo.cs
+C:\Users\joel010\Desktop\Proga\Exercises\Codewars\C#\obj\Debug\netcoreapp3.1\codewars.csproj.CoreCompileInputs.cache
+C:\Users\joel010\Desktop\Proga\Exercises\Codewars\C#\obj\Debug\netcoreapp3.1\codewars.dll
+C:\Users\joel010\Desktop\Proga\Exercises\Codewars\C#\obj\Debug\netcoreapp3.1\codewars.pdb
+C:\Users\joel010\Desktop\Proga\Exercises\Codewars\C#\obj\Debug\netcoreapp3.1\codewars.genruntimeconfig.cache

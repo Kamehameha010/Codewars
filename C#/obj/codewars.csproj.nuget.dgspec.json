@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joel010\\Desktop\\Proga\\C#\\C#8\\codewars\\codewars.csproj": {}
+    "C:\\Users\\joel010\\Desktop\\Proga\\Exercises\\Codewars\\C#\\codewars.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joel010\\Desktop\\Proga\\C#\\C#8\\codewars\\codewars.csproj": {
+    "C:\\Users\\joel010\\Desktop\\Proga\\Exercises\\Codewars\\C#\\codewars.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joel010\\Desktop\\Proga\\C#\\C#8\\codewars\\codewars.csproj",
+        "projectUniqueName": "C:\\Users\\joel010\\Desktop\\Proga\\Exercises\\Codewars\\C#\\codewars.csproj",
         "projectName": "codewars",
-        "projectPath": "C:\\Users\\joel010\\Desktop\\Proga\\C#\\C#8\\codewars\\codewars.csproj",
+        "projectPath": "C:\\Users\\joel010\\Desktop\\Proga\\Exercises\\Codewars\\C#\\codewars.csproj",
         "packagesPath": "C:\\Users\\joel010\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joel010\\Desktop\\Proga\\C#\\C#8\\codewars\\obj\\",
+        "outputPath": "C:\\Users\\joel010\\Desktop\\Proga\\Exercises\\Codewars\\C#\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -29,6 +29,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -40,6 +41,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -55,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
